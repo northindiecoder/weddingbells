@@ -94,10 +94,17 @@ nav {
     justify-content: space-between;
   }
 
+
+  .logo {
+    margin-LEFT: 1rem;
+    margin-top: 1rem;
+  }
   .nav-toggle {
     display: block;
+    margin-right: 1rem;
+    
   }
-
+  
   .nav-menu {
     display: none;
     flex-direction: column;
