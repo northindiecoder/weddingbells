@@ -88,7 +88,7 @@ nav {
 
 @media (max-width: 768px) {
 
-  .nav{
+  nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
