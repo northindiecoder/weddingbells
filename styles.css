@@ -272,3 +272,48 @@ input:checked + label {
   }
 }
 
+.testimonials{
+  margin-top: 160px;
+}
+.full-container1 {
+  border-color: black;
+  
+  max-width: 75vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.small-container1 {
+  position: relative; /* Ensure relative positioning for absolute centering */
+  
+  background-image: url(VIOLET\ GRAIN.jpg); 
+  background-size: cover; /* Ensure the image covers the entire background */ 
+  background-position: center; /* Background color for the container */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  text-align: center; /* Center text horizontally */
+}
+
+
+
+.small-container1 img {
+  display: block; /* Display the image as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+}
+
+.main-text-container-2{
+  margin-left: 15vw;
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 600px) {
+  .main-container {
+    padding: 10px;
+  }
+  .main-text-container-2{
+    margin-left: 7vw;
+  }
+}
+
