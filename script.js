@@ -20,4 +20,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+  });
+  
+  
+  
+// Include the Instafeed library using a script tag in your HTML file.
 
+// Instantiate Instafeed in your JavaScript file.
+var userFeed = new Instafeed({
+  get: 'user',
+  target: "instafeed-container",
+  resolution: 'low_resolution',
+  accessToken: 'GQWRPZAzdwT3ZACMlRHX2dPYndQdjhFdVdPbngxOGVhNEE3RnRtdFFzUVREWVM0YUVIOFVIcHh4MTRFVjk0bWxmOGZAMek9CZA1NDRDZA5ZAU9PakdZAWlJJaUFSWWNhVUFxWFJ6ZAUJ0NldmRHdyWmIxNE1VWVlZANGIycGMZD'
+});
+
+// Run Instafeed.
+userFeed.run();
